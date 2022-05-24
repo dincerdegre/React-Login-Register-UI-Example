@@ -1,4 +1,4 @@
-import Holder from '../UI/Holder';
+import Holder from './Holder';
 import classes from './TemplateFull.module.css';
 import Info from "./Info";
 

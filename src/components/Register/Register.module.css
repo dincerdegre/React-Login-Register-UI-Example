@@ -1,14 +1,42 @@
-.loginForm {
+.formBody {
     width:100%;
-    padding:1rem 0 0 0;
+    padding:0.5rem 0 0 0;
     display: block;
     justify-content: center;
     align-items: center;
 }
 
-.loginRow {
+.formRow {
     margin:0 0 1.5rem 0;
     width: 100%;
+}
+.formRow label.rowLabel {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.formRow input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.90rem .90rem;
+    height: inherit;
+}
+
+.formRow button {
+    width: 100%;
+    padding: 0.90rem .90rem;
+    font-size: 1.3rem;
+    background-color: #1F1F1F;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.formRow button:hover {
+    background-color: #040404;
 }
 
 .rowDisplay {
@@ -52,34 +80,76 @@ cursor: pointer;
     color: #040404;
  }
 
-.loginRow label.rowLabel {
+ 
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .formBody {
+        padding:0;
+      }
+      .formRow {
+        margin:0 0 0.5rem 0;
+        width: 100%;
+    }
+    .formRow input {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 0.60rem .90rem;
+        height: inherit;
+    }
+    .formRow label.rowLabel {
+        display: block;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 575px) and (min-width: 281px) {
+  .formBody {
+    padding:0;
+  }
+  .formRow {
+    margin:0 0 0.5rem 0;
+    width: 100%;
+}
+.formRow input {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.60rem .90rem;
+    height: inherit;
+}
+.formRow label.rowLabel {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1rem;
     margin-bottom: 0.5rem;
     width: 100%;
 }
-
-.loginRow input {
-    width: 100%;
-    font-size: 1.1rem;
-    padding: 0.90rem .90rem;
-    height: inherit;
-}
-
-.loginRow button {
-    width: 100%;
-    padding: 0.90rem .90rem;
-    font-size: 1.3rem;
-    background-color: #1F1F1F;
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-}
-
-.loginRow button:hover {
-    background-color: #040404;
-}
+  } @media only screen and (max-width: 280px) {
+    .formBody {
+        padding:0;
+      }
+      .formRow {
+        margin:0 0 0.5rem 0;
+        width: 100%;
+    }
+    .formRow input {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 0.60rem .90rem;
+        height: inherit;
+    }
+    .formRow label.rowLabel {
+        display: block;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+  }
 
 
   
