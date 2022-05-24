@@ -1,0 +1,49 @@
+.place {
+    width:50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .place {
+      width: 70%;
+      margin:0 15%;
+      height: 100vh;
+      position: absolute;
+      top:0;
+      background-color:transparent;
+    }
+  }
+  @media only screen and (max-width: 767px) and (min-width: 576px) {
+    .place {
+        width: 90%;
+        margin:0 5%;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        background-color:transparent;
+      }
+  }
+  @media only screen and (max-width: 575px) and (min-width: 281px) {
+    .place {
+        width: 100%;
+        margin:0;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        background-color:transparent;
+      }
+  } @media only screen and (max-width: 280px) {
+    .place {
+        width: 100%;
+        margin:0;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        background-color:transparent;
+      }
+  }
+  
