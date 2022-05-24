@@ -1,0 +1,35 @@
+.container {
+    min-height: 100vh !important;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    .container {
+      display:block;
+      position: relative;
+    justify-content:none;
+    }
+  }
+  @media only screen and (max-width: 767px) and (min-width: 576px) {
+    .container {
+      display:block;
+    justify-content:none;
+    }
+  }
+  @media only screen and (max-width: 575px) and (min-width: 281px) {
+    .container {
+      display:block;
+    justify-content:none;
+    }
+  } @media only screen and (max-width: 280px) {
+    .container {
+      display:block;
+    justify-content:none;
+    }
+  }
+  

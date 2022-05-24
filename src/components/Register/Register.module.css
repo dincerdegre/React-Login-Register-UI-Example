@@ -1,0 +1,85 @@
+.loginForm {
+    width:100%;
+    padding:1rem 0 0 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginRow {
+    margin:0 0 1.5rem 0;
+    width: 100%;
+}
+
+.rowDisplay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rememberPlace {
+width: 50%;
+display: flex;
+justify-content:flex-start;
+}
+.rememberPlace input.checkInput {
+width:1.5rem;
+height:1.5rem;
+margin-right: 0.4rem;
+accent-color: #1F1F1F;
+cursor: pointer;
+}
+.rememberPlace label.rememberLabel {
+    font-size: 1.0rem;
+    line-height: 1.8rem;
+    cursor: pointer;
+    -webkit-user-select: none; 
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.forgotPlace {
+    width: 50%;
+    text-align: right;
+    font-size: 1.0rem;
+    line-height: 1.8rem;
+}
+.forgotPlace a {
+   text-decoration: none;
+   color: #1F1F1F;
+}
+.forgotPlace a:hover {
+    text-decoration: underline;
+    color: #040404;
+ }
+
+.loginRow label.rowLabel {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.loginRow input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.90rem .90rem;
+    height: inherit;
+}
+
+.loginRow button {
+    width: 100%;
+    padding: 0.90rem .90rem;
+    font-size: 1.3rem;
+    background-color: #1F1F1F;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.loginRow button:hover {
+    background-color: #040404;
+}
+
+
+  
