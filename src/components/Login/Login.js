@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import classes from "./Login.module.css";
 import "../TemplateFull/FormBox.css"
 import logo from "../../assets/images/logo.png";
@@ -11,8 +12,8 @@ const Login = () => {
       </div>
       <h3>Login</h3>
       <p>Login to Your Account</p>
-      <form className={classes.loginForm}>
-        <div className={classes.loginRow}>
+      <form className={classes.formBody}>
+        <div className={classes.formRow}>
           <label htmlFor="emailAddress" className={classes.rowLabel}>
             Email Address
           </label>
@@ -23,7 +24,7 @@ const Login = () => {
             placeholder="Enter Your Email"
           />
         </div>
-        <div className={classes.loginRow}>
+        <div className={classes.formRow}>
           <label htmlFor="password" className={classes.rowLabel}>
             Password
           </label>
@@ -34,7 +35,7 @@ const Login = () => {
             placeholder="Enter Your Password"
           />
         </div>
-        <div className={`${classes.loginRow} ${classes.rowDisplay}`}>
+        <div className={`${classes.formRow} ${classes.rowDisplay}`}>
           <div className={classes.rememberPlace}>
             <input
               id="remember"
@@ -47,14 +48,14 @@ const Login = () => {
             </label>
           </div>
           <div className={classes.forgotPlace}>
-            <a href="/forgot-password">Forgot Password?</a>
+            <Link to="/forgot-password">Forgot Password?</Link>
           </div>
         </div>
-        <div className={classes.loginRow}>
+        <div className={classes.formRow}>
           <button type="submit">Login</button>
         </div>
       </form>
-      <p className="textCenter">Don't have an account? <a href="">Register now!</a></p>
+      <p className="textCenter">Don't have an account? <Link to="/register">Register now!</Link></p>
     </div>
     </TemplateFull>
   );

@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import classes from "./Register.module.css";
 import "../TemplateFull/FormBox.css"
 import logo from "../../assets/images/logo.png";
@@ -11,8 +12,8 @@ const Register = () => {
       </div>
       <h3>Register</h3>
       <p>Create a New Account</p>
-      <form className={classes.loginForm}>
-      <div className={classes.loginRow}>
+      <form className={classes.formBody}>
+      <div className={classes.formRow}>
           <label htmlFor="userName" className={classes.rowLabel}>
             Username
           </label>
@@ -23,7 +24,7 @@ const Register = () => {
             placeholder="Enter Your Username"
           />
         </div>
-        <div className={classes.loginRow}>
+        <div className={classes.formRow}>
           <label htmlFor="emailAddress" className={classes.rowLabel}>
             Email Address
           </label>
@@ -34,7 +35,7 @@ const Register = () => {
             placeholder="Enter Your Email"
           />
         </div>
-        <div className={classes.loginRow}>
+        <div className={classes.formRow}>
           <label htmlFor="password" className={classes.rowLabel}>
             Password
           </label>
@@ -46,7 +47,7 @@ const Register = () => {
           />
           <span>Minimum length of 8 character.</span>
         </div>
-        <div className={classes.loginRow}>
+        <div className={classes.formRow}>
           <label htmlFor="rePassword" className={classes.rowLabel}>
             Confirm Password
           </label>
@@ -57,11 +58,11 @@ const Register = () => {
             placeholder="Enter Your Password"
           />
         </div>
-        <div className={classes.loginRow}>
+        <div className={classes.formRow}>
           <button type="submit">Register</button>
         </div>
       </form>
-      <p className="textCenter">Already have an account?  <a href="">Login</a></p>
+      <p className="textCenter">Already have an account?  <Link to="/login">Login</Link></p>
     </div>
     </TemplateFull>
   );

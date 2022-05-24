@@ -1,6 +1,6 @@
 .formBox {
     width:60%;
-    min-height:50%;
+    min-height:20%;
     padding:1rem;
     background-color: white;
     color:#1F1F1F;
@@ -24,6 +24,8 @@
 .formBox p {
     font-size: 1.2rem;
     line-height: 1.3rem;
+    margin:0.5rem 0;
+    padding:0;
 }
 .formBox p a {
    color:#0C7AF8;
@@ -33,7 +35,7 @@
     color:#00428E;
     text-decoration: underline;
  }
- .formBox span {font-size: 0.9rem;line-height: 1.1rem;display: block;color:#797979;}
+ .formBox span {font-size: 0.9rem;line-height: 1.3rem;display: block;color:#797979;}
 .textCenter {
     text-align: center;
 }
@@ -67,10 +69,22 @@
       border-radius: 5px;
       box-shadow: 0 2px 10px rgba(41, 41, 41, 0.6);
     }
+    .formBox p {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      margin:0.5rem 0;
+      padding:0;
+  }
   } @media only screen and (max-width: 280px) {
     .formBox {
       width: 95%;
       border-radius: 5px;
       box-shadow: 0 2px 10px rgba(41, 41, 41, 0.6);
     }
+    .formBox p {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      margin:0.5rem 0;
+      padding:0;
+  }
   }
